@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import support.test.AcceptanceTest;
 
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.ISSUES;
+import static support.fixture.IssueFixture.ISSUES;
 
 public class HomeControllerTest extends AcceptanceTest {
     private static final Logger log = getLogger(HomeControllerTest.class);

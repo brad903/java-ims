@@ -16,7 +16,7 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.when;
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.MilestoneFixture.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MilestoneServiceTest extends BaseTest {

@@ -12,10 +12,12 @@ import org.springframework.http.ResponseEntity;
 import support.domain.ErrorMessage;
 import support.test.AcceptanceTest;
 
-import java.io.UnsupportedEncodingException;
-
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.LabelFixture.LABEL;
+import static support.fixture.MilestoneFixture.MILESTONE;
+import static support.fixture.UserFixture.BRAD;
+import static support.fixture.UserFixture.JUNGHYUN;
 
 public class ApiIssueControllerTest extends AcceptanceTest {
     private static final Logger log = getLogger(ApiIssueControllerTest.class);

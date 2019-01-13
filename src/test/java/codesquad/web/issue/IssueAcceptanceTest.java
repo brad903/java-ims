@@ -15,7 +15,10 @@ import support.test.BasicAuthAcceptanceTest;
 import support.test.HtmlFormDataBuilder;
 
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.MilestoneFixture.MILESTONES;
+import static support.fixture.UserFixture.BRAD;
+import static support.fixture.UserFixture.JUNGHYUN;
 
 public class IssueAcceptanceTest extends BasicAuthAcceptanceTest {
     private static final Logger log = getLogger(IssueAcceptanceTest.class);
@@ -88,7 +91,8 @@ public class IssueAcceptanceTest extends BasicAuthAcceptanceTest {
                 .addParameter("comment", "테")
                 .build();
         ResponseEntity<String> response = basicAuthTemplate().postForEntity("/issues", request, String.class);
-        softly.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+        softly.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.FOUND);
+        softly.assertThat(response.getHeaders().getLocation().getPath()).isEqualTo("/issues/form");
     }
 
     @Test
@@ -98,7 +102,8 @@ public class IssueAcceptanceTest extends BasicAuthAcceptanceTest {
                 .addParameter("comment", "")
                 .build();
         ResponseEntity<String> response = basicAuthTemplate().postForEntity("/issues", request, String.class);
-        softly.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+        softly.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.FOUND);
+        softly.assertThat(response.getHeaders().getLocation().getPath()).isEqualTo("/issues/form");
     }
 
     @Test

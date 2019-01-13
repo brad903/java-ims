@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.MILESTONE_BODY;
+import static support.fixture.MilestoneFixture.MILESTONE_BODY;
 import static support.test.ValidationTest.VALIDATOR;
 
 public class ApiMilestoneControllerTest extends AcceptanceTest {

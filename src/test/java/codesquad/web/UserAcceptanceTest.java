@@ -18,7 +18,7 @@ import support.test.HtmlFormDataBuilder;
 import javax.persistence.EntityNotFoundException;
 
 import static org.junit.Assert.assertEquals;
-import static support.test.Fixture.BRAD;
+import static support.fixture.UserFixture.BRAD;
 
 public class UserAcceptanceTest extends BasicAuthAcceptanceTest {
     private static final Logger log = LoggerFactory.getLogger(UserAcceptanceTest.class);

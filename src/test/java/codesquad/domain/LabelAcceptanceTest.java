@@ -9,7 +9,7 @@ import org.springframework.util.MultiValueMap;
 import support.test.AcceptanceTest;
 import support.test.HtmlFormDataBuilder;
 
-import static support.test.Fixture.LABEL_BODY;
+import static support.fixture.LabelFixture.LABEL_BODY;
 
 public class LabelAcceptanceTest extends AcceptanceTest {
     HttpEntity<MultiValueMap<String, Object>> request;

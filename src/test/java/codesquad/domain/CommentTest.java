@@ -5,7 +5,9 @@ import codesquad.domain.issue.Comment;
 import org.junit.Test;
 import support.test.BaseTest;
 
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.UserFixture.BRAD;
+import static support.fixture.UserFixture.JUNGHYUN;
 
 public class CommentTest extends BaseTest {
 

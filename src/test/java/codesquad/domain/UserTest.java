@@ -8,7 +8,7 @@ import support.test.BaseTest;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
-import static support.test.Fixture.BRAD;
+import static support.fixture.UserFixture.BRAD;
 
 public class UserTest extends BaseTest {
     public static User newUser(Long id) {

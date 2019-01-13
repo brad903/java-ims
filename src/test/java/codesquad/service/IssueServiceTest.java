@@ -19,7 +19,11 @@ import java.util.Optional;
 import static codesquad.domain.IssueTest.newIssue;
 import static org.mockito.Mockito.when;
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.LabelFixture.LABEL;
+import static support.fixture.MilestoneFixture.MILESTONE;
+import static support.fixture.UserFixture.BRAD;
+import static support.fixture.UserFixture.JUNGHYUN;
 
 @RunWith(MockitoJUnitRunner.class)
 public class IssueServiceTest extends BaseTest {

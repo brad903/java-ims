@@ -15,7 +15,9 @@ import javax.validation.ConstraintViolation;
 import java.util.Set;
 
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.UserFixture.BRAD;
+import static support.fixture.UserFixture.JUNGHYUN;
 import static support.test.ValidationTest.VALIDATOR;
 
 public class ApiCommentAcceptanceTest extends AcceptanceTest {

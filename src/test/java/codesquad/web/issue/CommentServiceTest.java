@@ -17,7 +17,8 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.when;
 import static org.slf4j.LoggerFactory.getLogger;
-import static support.test.Fixture.*;
+import static support.fixture.IssueFixture.*;
+import static support.fixture.UserFixture.BRAD;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CommentServiceTest extends BaseTest {

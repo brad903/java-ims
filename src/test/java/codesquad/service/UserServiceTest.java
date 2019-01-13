@@ -13,7 +13,7 @@ import support.test.BaseTest;
 import java.util.Optional;
 
 import static org.mockito.Mockito.when;
-import static support.test.Fixture.BRAD;
+import static support.fixture.UserFixture.BRAD;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceTest extends BaseTest {
