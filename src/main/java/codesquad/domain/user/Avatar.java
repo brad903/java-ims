@@ -62,8 +62,8 @@ public class Avatar implements FileEntity {
     }
 
     private static class DefaultAvatar extends Avatar {
-        public static final String DEFAULT_FILE_NAME = "default";
-        public static final String DEFAULT_EXTENTION = "jpeg";
+        public static final String DEFAULT_FILE_NAME = "avatar";
+        public static final String DEFAULT_EXTENTION = "png";
 
         public DefaultAvatar() {
             super(DEFAULT_FILE_NAME, DEFAULT_FILE_NAME, DEFAULT_EXTENTION);
