@@ -18,11 +18,10 @@ jobs: # a collection of steps
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "build.gradle" }}
-
-      branches:
-        only:
-          - setup-circleci
       - run:
+          filters:
+            braches:
+              only: master
           name: Run All Tests
           command: ./gradlew test
       - store_artifacts:
