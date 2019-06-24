@@ -9,7 +9,7 @@ jobs: # a collection of steps
 
     branches:
       only:
-        - develop
+        - master
 
     steps:
       - checkout
