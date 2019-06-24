@@ -7,10 +7,6 @@ jobs: # a collection of steps
     docker: # run the steps with Docker
       - image: circleci/openjdk:8-jdk-browsers # ...with this image as the primary container; this is where all `steps` will run
 
-    branches:
-      only:
-        - setup-circleci
-
     steps:
       - checkout
       - restore_cache:
@@ -22,6 +18,10 @@ jobs: # a collection of steps
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "build.gradle" }}
+
+      branches:
+        only:
+          - setup-circleci
       - run:
           name: Run All Tests
           command: ./gradlew test
